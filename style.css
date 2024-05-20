@@ -725,7 +725,7 @@
       font-weight: 600;
       font-size: 75px; 
       color: #677f5d;
-        margin: 0;
+      margin: 0;
     }
     #gallery-1152 .cs-gallery {
         width: 100%;
@@ -927,7 +927,6 @@
 @media only screen and (min-width: 64rem) {
 
   #reviews-1537 .cs-container{
-    font-family: "Poetsen One", sans-serif;
     padding-top: 100px;
   }
   #reviews-1537 .cs-card-group {
@@ -935,12 +934,49 @@
     justify-content: center;
     align-items: stretch;
   }
+  #reviews-1537 .cs-topper {
+    font-family: "Poetsen One", sans-serif;
+    color: #767676;
+  }
+
+  #reviews-1537 .cs-text {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    line-height: 40px;
+  }
+
+  #reviews-1537 .cs-title {
+  font-family: "Poetsen One", sans-serif;
+      font-weight: 600;
+      font-size: 75px; 
+      color: #677f5d;
+      margin: 0;
+  }
   #reviews-1537 .cs-item {
     max-width: 100%;
   }
   #reviews-1537 .cs-review {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: lighter;
+    line-height: 40px;
     min-height: 15.625rem;
   }
+
+  #reviews-1537 .cs-name {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+  }
+
+  #reviews-1537 .cs-job {
+    font-family: "Poetsen One", sans-serif;
+    color: #767676;
+    font-weight: 100;
+
+  }
+
+
+
+
 }
                                 
 
