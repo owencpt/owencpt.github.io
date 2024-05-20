@@ -9,7 +9,86 @@
       color: #677f5d; */
 
 
+/* .video-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
+#intro-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+} */
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* #bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+} */
+
+
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #gallery-1716 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #gallery-1716 .cs-content {
+    max-width: 19rem;
+    /* 32px - 64px, ensures theres always a gap at the bottom to space out the content from the bottom of the container and let the colored rectangle shape be a little bigger and take up more space */
+    padding-bottom: clamp(2rem, 7vw, 4rem);
+  }
+  #gallery-1716 .cs-text:last-of-type {
+    /* add position relative so the colored rectangle is now absolutely positioned to the cs-text parent. We also only want these styles on the last paragraph tag */
+    position: relative;
+    z-index: 1;
+  }
+  #gallery-1716 .cs-text:last-of-type:before {
+    width: 250vw;
+    height: 100vw;
+    top: calc(100% + 1.8rem);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #gallery-1716 .cs-gallery {
+    height: auto;
+  }
+  #gallery-1716 .cs-picture {
+    height: 100%;
+    max-height: 100%;
+    /* 280px - 420px */
+    min-height: clamp(17.5rem, 37vw, 26.25rem);
+  }
+}
+                                
 
 
 
@@ -685,7 +764,9 @@
     }
   }
 
-
+#video {
+  padding: var(--sectionPadding);
+}
 
 /*-- -------------------------- -->
 <---          Gallery           -->
@@ -708,7 +789,8 @@
         gap: clamp(3rem, 6vw, 4rem);
     }
     #gallery-1152 .cs-content {
-        padding-top: 200px;
+        z-index: 1;
+        padding-top: 500px;
         
         /* set text align to left if content needs to be left aligned */
         text-align: center;
@@ -719,7 +801,15 @@
         align-items: center;
     }
 
+    #gallery-1152 .cs-welcome {
+      z-index: 1;
+      font-size: 120px;
+      font-family: "Poetsen One", sans-serif;
+      color: #677f5d;
+  }
+
     #gallery-1152 .cs-topper {
+        padding-top: 300px;
         font-family: "Poetsen One", sans-serif;
         color: #767676;
     }
@@ -814,6 +904,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
+  
   #reviews-1537 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
@@ -1213,11 +1304,11 @@
   }
   #menu-1001 .cs-item-p {
       /* 14px - 16px */
+      color: #767676;
       font-size: clamp(0.875rem, 2vw, 1rem);
       line-height: 1.5em;
       text-align: left;
       margin: 0;
-      color: var(--bodyTextColor);
   }
 }
 /* Tablet - 768px */

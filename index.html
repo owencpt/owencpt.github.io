@@ -13,94 +13,108 @@
 <!-- ============================================ -->
 <!--                 Navigation                   -->
 <!-- ============================================ -->
-
-<header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <!--Logo is turned white in the css with a filter on dark mode-->
-        <a href="" class="cs-logo" aria-label="back to home">
-            <img src="https://img1.wsimg.com/isteam/ip/b583e0ec-e75f-4fca-8018-9cf3869ea85a/granger%20logo%20green.png/:/rs=w:608,h:125,cg:true,m/cr=w:608,h:125/qt=q:100/ll" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
-        </a>
-        <!--Navigation List-->
-        <nav class="cs-nav" role="navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
-                <div class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
-                </div>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link cs-active">
-                            Home
-                        </a>
-                    </li>
-                    <!-- <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                            About
-                        </a>
-                    </li> -->
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link">
-                            Menu
-                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                        </span>
-                        <ul class="cs-drop-ul">
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Instore Menu</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Takeaway Menu</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="cs-contact-group">
-            <a href="tel:+84 1985 33 999" class="cs-phone">
-                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
-                +84 1985 33 999
+<body>
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Logo is turned white in the css with a filter on dark mode-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="https://img1.wsimg.com/isteam/ip/b583e0ec-e75f-4fca-8018-9cf3869ea85a/granger%20logo%20green.png/:/rs=w:608,h:125,cg:true,m/cr=w:608,h:125/qt=q:100/ll" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
             </a>
-            <div class="cs-social">
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <!-- <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li> -->
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Menu
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Instore Menu</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Takeaway Menu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cs-contact-group">
+                <a href="tel:+84 1985 33 999" class="cs-phone">
+                    <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                    +84 1985 33 999
                 </a>
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
+                <div class="cs-social">
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
             </div>
         </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--                  Video                       -->
+    <!-- ============================================ -->
+
+    <div class="video-banner">
+        <video autoplay muted loop id="bg-video">
+            <source src="video/2853794-uhd_3840_2160_24fps.mp4" type="video/mp4">
+            <source src="video/2853794-uhd_3840_2160_24fps.mp4" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
     </div>
-    
-</header>
 
 
-<body>
+                                
+
+
     <section id="gallery-1152">
         <div class="cs-container">
             <div class="cs-content">
+                <h1 class="cs-welcome">Welcome To Granger Cafe</h1>
                 <span class="cs-topper">Great Food & Strong Coffee</span>
                 <h2 class="cs-title">Granger Cafe</h2>
             </div>
@@ -202,7 +216,7 @@
     <section id="menu-1001">
         <div class="cs-container">
             <div class="cs-content">
-                <h2 class="cs-title">Our Specials</h2>
+                <h2 class="cs-title">Weekly Specials</h2>
                 <p class="cs-text">
                     Every month we have special dishes creatively designed by our chefs. All items on our special menu uses ingredients that are fresh during this current season and are from locally sources farms across australia ! 
                 </p>
@@ -210,9 +224,9 @@
             <ul class="cs-card-group">
                 <li class="cs-item">
                     <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        <source media="(max-width: 600px)" src="images/elena-leya-KPDh-ELUHDw-unsplash.jpg">
+                        <source media="(min-width: 601px)" src="images/elena-leya-KPDh-ELUHDw-unsplash.jpg">
+                        <img loading="lazy" decoding="async" src="images/elena-leya-KPDh-ELUHDw-unsplash.jpg" alt="food" width="160" height="160">
                         </picture>
                         <div class="cs-info">
                         <h3 class="cs-h3">
@@ -228,9 +242,9 @@
                 </li>
                 <li class="cs-item">
                     <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        <source media="(max-width: 600px)" src="images/vicky-ng-yIh0i6TYGrs-unsplash.jpg">
+                        <source media="(min-width: 601px)" src="images/vicky-ng-yIh0i6TYGrs-unsplash.jpg">
+                        <img loading="lazy" decoding="async" src="images/vicky-ng-yIh0i6TYGrs-unsplash.jpg" alt="food" width="160" height="160">
                         </picture>
                         <div class="cs-info">
                         <h3 class="cs-h3">
@@ -246,9 +260,9 @@
                 </li>
                 <li class="cs-item">
                     <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        <source media="(max-width: 600px)" src="images/sara-cervera-cjiJUfFCoUs-unsplash.jpg">
+                        <source media="(min-width: 601px)" src="images/sara-cervera-cjiJUfFCoUs-unsplash.jpg">
+                        <img loading="lazy" decoding="async" src="images/sara-cervera-cjiJUfFCoUs-unsplash.jpg" alt="food" width="160" height="160">
                         </picture>
                         <div class="cs-info">
                         <h3 class="cs-h3">
@@ -264,9 +278,9 @@
                 </li>
                 <li class="cs-item">
                     <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/food2.jpg" alt="food" width="160" height="160">
+                        <source media="(max-width: 600px)" src="images/jenn-kosar-k5VGs9qQubc-unsplash.jpg">
+                        <source media="(min-width: 601px)" src="images/jenn-kosar-k5VGs9qQubc-unsplash.jpg">
+                        <img loading="lazy" decoding="async" src="images/jenn-kosar-k5VGs9qQubc-unsplash.jpg" alt="food" width="160" height="160">
                         </picture>
                         <div class="cs-info">
                         <h3 class="cs-h3">
