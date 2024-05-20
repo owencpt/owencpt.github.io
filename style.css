@@ -3,7 +3,10 @@
 <--- -------------------------- -*/
 
 
-
+/* font-family: "Poetsen One", sans-serif;
+      font-weight: 600;
+      font-size: 75px; 
+      color: #677f5d; */
 
 
 
@@ -996,7 +999,6 @@
       height: 100%;
       width: 100%;
       opacity: 0.08;
-      background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/static-pattern.png");
       background-size: auto;
       background-position: center;
       background-repeat: repeat;
