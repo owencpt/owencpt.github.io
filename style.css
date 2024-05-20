@@ -706,6 +706,7 @@
     }
     #gallery-1152 .cs-content {
         padding-top: 200px;
+        
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
@@ -716,9 +717,14 @@
     }
 
     #gallery-1152 .cs-topper {
+        font-family: "Poetsen One", sans-serif;
         color: #767676;
     }
     #gallery-1152 .cs-title {
+       font-family: "Poetsen One", sans-serif;
+      font-weight: 600;
+      font-size: 75px; 
+      color: #677f5d;
         margin: 0;
     }
     #gallery-1152 .cs-gallery {
