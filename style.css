@@ -38,7 +38,7 @@ body, html {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 75%;
+    opacity: 80%;
 }
 /* #bg-video {
   position: absolute;
@@ -806,7 +806,7 @@ body, html {
       z-index: 1;
       font-size: 120px;
       font-family: "Poetsen One", sans-serif;
-      color: #677f5d;
+      color: #ffffff;
   }
 
     #gallery-1152 .cs-topper {
@@ -1332,11 +1332,12 @@ body, html {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #contact-1388 {
-      padding: var(--sectionPadding);
-      background-color: #f7f7f7;
+      padding-top: 100px;
+      background-color: white;
       position: relative;
       z-index: 1;
-  }
+      font-family: "Poetsen One", sans-serif;
+    }
   #contact-1388 .cs-container {
       width: 100%;
       /* changes to 1280px at tablet */
@@ -1347,6 +1348,7 @@ body, html {
       align-items: stretch;
       flex-direction: column;
       column-gap: auto;
+      background-color: white;
       /* 48px - 64px */
       gap: clamp(2rem, 3vw, 3rem);
       position: relative;
@@ -1362,10 +1364,12 @@ body, html {
   }
 
   #contact-1388 .cs-title {
-      max-width: 23ch;
+      color: #677f5d;
+      font-size: 50px;
+      margin: 0px;
   }
   #contact-1388 .cs-text {
-      margin-bottom: 1rem;
+      line-height: 30px;
   }
   #contact-1388 .cs-text:last-of-type {
       margin-bottom: 2rem;
@@ -1416,7 +1420,7 @@ body, html {
       height: 3.75rem;
       margin: 0;
       border-radius: 50%;
-      border: 1px solid #bababa;
+      border: 1px solid #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1434,7 +1438,9 @@ body, html {
       max-width: 39.375rem;
       /* 24px - 48px top and bottom */
       /* 16px - 48px left and right */
-      padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
+      /* padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem); */
+      padding-left: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
+      padding-right: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
       /* prevents flexbox from affecting height and width */
       box-sizing: border-box;
       background-color: #fff;
@@ -1451,7 +1457,7 @@ body, html {
       line-height: 1.2em;
       font-weight: 700;
       margin: 0 0 0.25rem 0;
-      color: var(--headerColor);
+      color: #677f5d;
   }
   #contact-1388 .cs-label {
       /* 14px - 16px */
@@ -1478,7 +1484,8 @@ body, html {
       box-sizing: border-box;
   }
   #contact-1388 .cs-input::placeholder {
-      color: #7d799c;
+    font-family: "Poetsen One", sans-serif;
+    color: #7d799c;
       opacity: 0.6;
   }
   #contact-1388 .cs-textarea {
@@ -1494,10 +1501,10 @@ body, html {
       font-weight: 700;
       overflow: hidden;
       margin: 0;
-      color: #fff;
+      color: #ffffff;
       padding: 0 3rem;
       border-radius: 1.875rem;
-      background-color: var(--primary);
+      background-color: #677f5d;
       display: inline-block;
       position: relative;
       z-index: 1;
@@ -1572,14 +1579,13 @@ body, html {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #footer-1147 {
-      padding: var(--sectionPadding);
       position: relative;
       z-index: 1;
   }
   #footer-1147 .cs-container {
       width: 100%;
       max-width: 80rem;
-      margin: auto;
+      margin-top: clamp(2rem, 4vw, 2.5rem);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1587,7 +1593,9 @@ body, html {
   #footer-1147 .cs-top {
       width: 100%;
       /* 32px - 40px */
+      margin-top: clamp(2rem, 4vw, 2.5rem);
       margin-bottom: clamp(2rem, 4vw, 2.5rem);
+      margin-left: clamp(2rem, 4vw, 2.5rem);
       padding-bottom: clamp(2rem, 4vw, 2.5rem);
       border-bottom: 1px solid #484848;
       display: flex;
@@ -1637,12 +1645,13 @@ body, html {
       width: 100%;
       display: flex;
       flex-direction: column;
+      padding-bottom: 20px;
       align-items: center;
       gap: 1.5rem;
   }
   #footer-1147 .cs-social {
       margin: 0;
-      padding: 0;
+      padding-left: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
