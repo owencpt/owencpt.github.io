@@ -1187,6 +1187,7 @@ body, html {
       font-size: 1rem;
       /* 46px - 56px */
       line-height: clamp(2.875em, 5.5vw, 3.5em);
+      border-radius: 5px;
       text-decoration: none;
       font-weight: 700;
       text-align: center;
@@ -1220,6 +1221,24 @@ body, html {
   #menu-1001 .cs-button-solid:hover:before {
       width: 100%;
   }
+
+  #menu-1001 .cs-filter{
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    
+  }
+
+  #menu-1001 .cs-button{
+    font-size: 20px;
+    background-color: #677f5d;
+    border-radius: 5px;
+    border:none;
+    font-family: "Poetsen One", sans-serif;
+    color: #ffffff;
+    padding: 20px;
+  }
+
   #menu-1001 .cs-card-group {
       margin: 0;
       padding: 0;
@@ -1588,8 +1607,9 @@ body, html {
   }
   #footer-1147 .cs-container {
       width: 100%;
-      max-width: 80rem;
+      max-width: 95%;
       margin-top: clamp(2rem, 4vw, 2.5rem);
+      padding-left: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1600,6 +1620,7 @@ body, html {
       width: 100%;
       /* 32px - 40px */
       margin-top: clamp(2rem, 4vw, 2.5rem);
+      margin-right: clamp(2rem, 4vw, 2.5rem);
       margin-bottom: clamp(2rem, 4vw, 2.5rem);
       margin-left: clamp(2rem, 4vw, 2.5rem);
       padding-bottom: clamp(2rem, 4vw, 2.5rem);
