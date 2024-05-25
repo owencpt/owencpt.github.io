@@ -26,6 +26,8 @@
   z-index: -1;
 } */
 
+
+
 body, html {
   margin: 0;
   padding: 0;
@@ -1231,9 +1233,10 @@ body, html {
 
   #menu-1001 .cs-button{
     font-size: 20px;
+    cursor:pointer;
     background-color: #677f5d;
-    border-radius: 5px;
-    border:none;
+    border-radius: 10px;
+    border-color: #ffffff;
     font-family: "Poetsen One", sans-serif;
     color: #ffffff;
     padding: 20px;
