@@ -80,3 +80,21 @@ document.getElementById('dairy-free').addEventListener('click', function() {
     } 
 
 });
+
+
+
+document.getElementById("logo").addEventListener('focus', function(){
+    var button = document.getElementById("access-button");
+    button.style.display = "inherit"
+});
+
+document.getElementById("home").addEventListener('blur', function(){
+    var button = document.getElementById("access-button");
+    button.style.display = "none"
+});
+
+document.getElementById("access-button").addEventListener('click', function(){
+    window.scrollTo(0,0);
+
+});
+

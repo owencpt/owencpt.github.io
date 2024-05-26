@@ -19,9 +19,12 @@
         <div class="cs-container">
             <!--Nav Logo-->
             <!--Logo is turned white in the css with a filter on dark mode-->
-            <a href="" class="cs-logo" aria-label="back to home">
-                <img src="https://img1.wsimg.com/isteam/ip/b583e0ec-e75f-4fca-8018-9cf3869ea85a/granger%20logo%20green.png/:/rs=w:608,h:125,cg:true,m/cr=w:608,h:125/qt=q:100/ll" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            <button id="access-button">Return To The Top</button>
+            <a href="" class="cs-logo"  id="logo" aria-label="back to home" tabindex="0">
+                <img tabindex= "-1" src="https://img1.wsimg.com/isteam/ip/b583e0ec-e75f-4fca-8018-9cf3869ea85a/granger%20logo%20green.png/:/rs=w:608,h:125,cg:true,m/cr=w:608,h:125/qt=q:100/ll" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                
             </a>
+            
             <!--Navigation List-->
             <nav class="cs-nav" role="navigation">
                 <!--Mobile Nav Toggle-->
@@ -35,8 +38,8 @@
                 <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
                 <div class="cs-ul-wrapper">
                     <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link cs-active">
+                        <li class="cs-li" >
+                            <a href="" class="cs-li-link cs-active" id="home">
                                 Home
                             </a>
                         </li>
@@ -47,16 +50,16 @@
                         </li> -->
                         <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                         <li class="cs-li cs-dropdown" tabindex="0">
-                            <span class="cs-li-link">
+                            <span class="cs-li-link" id="dropdown">
                                 Menu
                                 <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                             </span>
-                            <ul class="cs-drop-ul">
-                                <li class="cs-drop-li">
-                                    <a href="" class="cs-li-link cs-drop-link">Instore Menu</a>
+                            <ul class="cs-drop-ul" >
+                                <li class="cs-drop-li" >
+                                    <a href="" class="cs-li-link cs-drop-link" tabindex="0">Instore Menu</a>
                                 </li>
                                 <li class="cs-drop-li">
-                                    <a href="" class="cs-li-link cs-drop-link">Takeaway Menu</a>
+                                    <a href="" class="cs-li-link cs-drop-link" tabindex="0">Takeaway Menu</a>
                                 </li>
                             </ul>
                         </li>
@@ -76,7 +79,7 @@
             <div class="cs-contact-group">
                 <a href="tel:+84 1985 33 999" class="cs-phone">
                     <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
-                    +84 1985 33 999
+                    (+61) 3 9913 9542
                 </a>
                 <div class="cs-social">
                     <a href="" class="cs-social-link">
@@ -96,59 +99,61 @@
         </div>
     </header>
 
-    <!-- ============================================ -->
-    <!--                  Video                       -->
-    <!-- ============================================ -->
+    
+    <!-- Video -->
+    
 
     <div class="video-banner">
-        <video autoplay muted loop id="bg-video">
-            <source src="video/2853794-uhd_3840_2160_24fps.mp4" type="video/mp4">
-            <source src="video/2853794-uhd_3840_2160_24fps.mp4" type="video/webm">
+        <video autoplay muted loop id="bg-video" >
+            <source src="video/coffee_video.mp4" type="video/mp4">
+            <source src="video/coffee_video.mp4" type="video/webm">
             Your browser does not support the video tag.
         </video>
     </div>
 
 
                                 
-
+    <!-- ============================================ -->
+    <!--                  Gallery                     -->
+    <!-- ============================================ -->
 
     <section id="gallery-1152">
         <div class="cs-container">
             <div class="cs-content">
                 <h1 class="cs-welcome">Welcome To Granger Cafe</h1>
                 <span class="cs-topper">Great Food & Strong Coffee</span>
-                <h2 class="cs-title">Granger Cafe</h2>
+                <h2 class="cs-title" tabindex="0">Granger Cafe</h2>
             </div>
             <div class="cs-gallery">
                 <!--Picture 1-->
                 <picture class="cs-image">
-                    <source media="(max-width: 600px)" src="images/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg">
-                    <source media="(min-width: 601px)" src="images/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg">
-                    <img loading="eager" decoding="auto" src="images/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" alt="gallery" width="1280" height="1707">
+                    <source media="(max-width: 600px)" src="images/burger.jpg">
+                    <source media="(min-width: 601px)" src="images/burger.jpg">
+                    <img loading="eager" decoding="auto" src="images/burger.jpg" alt="gallery" width="1280" height="1707">
                 </picture>
                 <!--Picture 2-->
                 <picture class="cs-image">
-                    <source media="(max-width: 600px)" src="images/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg">
-                    <source media="(min-width: 601px)" src="images/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg">
-                    <img loading="eager" decoding="auto" src="images/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg" alt="gallery" width="272" height="320">
+                    <source media="(max-width: 600px)" src="images/pastry.jpg">
+                    <source media="(min-width: 601px)" src="images/pastry.jpg">
+                    <img loading="eager" decoding="auto" src="images/pastry.jpg" alt="gallery" width="272" height="320">
                 </picture>
                 <!--Picture 3-->
                 <picture class="cs-image">
-                    <source media="(max-width: 600px)" src="images/breakslow-E6RTpqvOasU-unsplash.jpg">
-                    <source media="(min-width: 601px)" src="images/breakslow-E6RTpqvOasU-unsplash.jpg">
-                    <img loading="eager" decoding="auto" src="images/breakslow-E6RTpqvOasU-unsplash.jpg" alt="gallery" width="272" height="320">
+                    <source media="(max-width: 600px)" src="images/icecoffee.jpg">
+                    <source media="(min-width: 601px)" src="images/icecoffee.jpg">
+                    <img loading="eager" decoding="auto" src="images/icecoffee.jpg" alt="gallery" width="272" height="320">
                 </picture>
                 <!--Picture 4-->
                 <picture class="cs-image">
-                    <source media="(max-width: 600px)" src="images/rod-long-I79Pgmhmy5M-unsplash.jpg">
-                    <source media="(min-width: 601px)" src="images/rod-long-I79Pgmhmy5M-unsplash.jpg">
-                    <img loading="eager" decoding="auto" src="images/rod-long-I79Pgmhmy5M-unsplash.jpg" alt="gallery" width="272" height="320">
+                    <source media="(max-width: 600px)" src="images/cafe.jpg">
+                    <source media="(min-width: 601px)" src="images/cafe.jpg">
+                    <img loading="eager" decoding="auto" src="images/cafe.jpg" alt="gallery" width="272" height="320">
                 </picture>
                 <!--Picture 5-->
                 <picture class="cs-image">
-                    <source media="(max-width: 600px)" src="images/julian-dik--czl8QNCVKY-unsplash.jpg">
-                    <source media="(min-width: 601px)" src="images/julian-dik--czl8QNCVKY-unsplash.jpg">
-                    <img loading="eager" decoding="auto" src="images/julian-dik--czl8QNCVKY-unsplash.jpg" alt="gallery" width="272" height="320">
+                    <source media="(max-width: 600px)" src="images/hotcoffee.jpg">
+                    <source media="(min-width: 601px)" src="images/hotcoffee.jpg">
+                    <img loading="eager" decoding="auto" src="images/hotcoffee.jpg" alt="gallery" width="272" height="320">
                 </picture>
             </div>
         </div>
@@ -175,7 +180,7 @@
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
-                    <p class="cs-review">
+                    <p class="cs-review" tabindex="0">
                         Went with my family this weekend and would highly recommended for people in Caulfield ! 
                         <!--SVG Background-->
                         <svg class="cs-svg" id="Layer_2-1537-1537" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="none" viewBox="0 0 419.56 253.34"><defs><style>#reviews-1537 .cls-1{fill:var(--svgBG);stroke-width:0px;}#reviews-1537 .cls-2{fill:none;stroke:var(--svgBorder);stroke-width:8px;}</style></defs><g id="Layer_1-2-1537-1537"><path class="cls-1" d="m15.19,31.24C3.02,87.15-7.83,197.87,33.09,244.28c1.6,1.84,3.7,3.1,5.97,3.98s5.53,1.27,7.96,1c111.15-12.01,218.79-19.77,331.19-10.95,7.42.59,13.44-2.31,16.91-8.96,6.17-11.9,9.68-26.01,11.93-41.81,6.86-47.35,14.39-96.32-1.99-144.35-10.09-29.5-34.23-38.72-63.65-38.83-121.86-.35-220.38.52-295.39,2.99-18.98.63-26.52,4-30.83,23.89Z"/><path class="cls-2" d="m15.07,30.98C2.88,86.96-7.99,197.81,33,244.27c1.61,1.84,3.7,3.1,5.98,3.99s5.54,1.27,7.97,1c111.37-12.02,219.23-19.8,331.85-10.96,7.43.59,13.47-2.31,16.94-8.97,6.18-11.92,9.7-26.04,11.96-41.86,6.88-47.4,14.42-96.43-1.99-144.52-10.11-29.53-34.29-38.77-63.78-38.87-122.1-.35-220.82.52-295.97,2.99-19.01.63-26.57,4.01-30.89,23.92Z"/></g></svg>
@@ -191,7 +196,7 @@
                     </div>
                 </li>
                 <li class="cs-item">
-                    <p class="cs-review">
+                    <p class="cs-review" tabindex="0">
                         Skilled Baristas and serves amazing pastries. Highly impressed!
                         <!--SVG Background-->
                         <svg class="cs-svg" id="Layer_2-1537-1537"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 419.56 253.34"><defs><style>#reviews-1537 .cls-1{fill:var(--svgBG);stroke-width:0px;}#reviews-1537 .cls-2{fill:none;stroke:var(--svgBorder);stroke-width:8px;}</style></defs><g id="Layer_1-2-1537-1537"><path class="cls-1" d="m15.19,31.24C3.02,87.15-7.83,197.87,33.09,244.28c1.6,1.84,3.7,3.1,5.97,3.98s5.53,1.27,7.96,1c111.15-12.01,218.79-19.77,331.19-10.95,7.42.59,13.44-2.31,16.91-8.96,6.17-11.9,9.68-26.01,11.93-41.81,6.86-47.35,14.39-96.32-1.99-144.35-10.09-29.5-34.23-38.72-63.65-38.83-121.86-.35-220.38.52-295.39,2.99-18.98.63-26.52,4-30.83,23.89Z"/><path class="cls-2" d="m15.07,30.98C2.88,86.96-7.99,197.81,33,244.27c1.61,1.84,3.7,3.1,5.98,3.99s5.54,1.27,7.97,1c111.37-12.02,219.23-19.8,331.85-10.96,7.43.59,13.47-2.31,16.94-8.97,6.18-11.92,9.7-26.04,11.96-41.86,6.88-47.4,14.42-96.43-1.99-144.52-10.11-29.53-34.29-38.77-63.78-38.87-122.1-.35-220.82.52-295.97,2.99-19.01.63-26.57,4.01-30.89,23.92Z"/></g></svg>
@@ -225,7 +230,7 @@
             <ul class="filter-button">
                 <li class="cs-filter">
                     <button class="cs-button" id="show-all">Show All</button>
-                    <button class="cs-button" id="vegetarian">Vegetarian</button>
+                    <button class="cs-button" id="vegetarian" tabindex="0">Vegetarian</button>
                     <button class="cs-button" id="vegan">Vegan</button>
                     <button class="cs-button" id="dairy-free">Dairy Free</button>
                 </li>
@@ -233,9 +238,9 @@
             <ul class="cs-card-group">
                 <li id="sandwich" class="cs-item" >
                     <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" src="images/elena-leya-KPDh-ELUHDw-unsplash.jpg">
-                        <source media="(min-width: 601px)" src="images/elena-leya-KPDh-ELUHDw-unsplash.jpg">
-                        <img loading="lazy" decoding="async" src="images/elena-leya-KPDh-ELUHDw-unsplash.jpg" alt="food" width="160" height="160">
+                        <source media="(max-width: 600px)" src="images/sandwich.jpg">
+                        <source media="(min-width: 601px)" src="images/sandwich.jpg">
+                        <img loading="lazy" decoding="async" src="images/sandwich.jpg" alt="food" width="160" height="160">
                         </picture>
                         <div class="cs-info">
                         <h3 class="cs-h3">
@@ -251,9 +256,9 @@
                 </li>
                 <li id="acai" class="cs-item">
                     <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" src="images/vicky-ng-yIh0i6TYGrs-unsplash.jpg">
-                        <source media="(min-width: 601px)" src="images/vicky-ng-yIh0i6TYGrs-unsplash.jpg">
-                        <img loading="lazy" decoding="async" src="images/vicky-ng-yIh0i6TYGrs-unsplash.jpg" alt="food" width="160" height="160">
+                        <source media="(max-width: 600px)" src="images/acai.jpg">
+                        <source media="(min-width: 601px)" src="images/acai.jpg">
+                        <img loading="lazy" decoding="async" src="images/acai.jpg" alt="food" width="160" height="160">
                         </picture>
                         <div class="cs-info">
                         <h3 class="cs-h3">
@@ -269,9 +274,9 @@
                 </li>
                 <li id="smoothie" class="cs-item">
                     <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" src="images/sara-cervera-cjiJUfFCoUs-unsplash.jpg">
-                        <source media="(min-width: 601px)" src="images/sara-cervera-cjiJUfFCoUs-unsplash.jpg">
-                        <img loading="lazy" decoding="async" src="images/sara-cervera-cjiJUfFCoUs-unsplash.jpg" alt="food" width="160" height="160">
+                        <source media="(max-width: 600px)" src="images/smoothie.jpg">
+                        <source media="(min-width: 601px)" src="images/smoothie.jpg">
+                        <img loading="lazy" decoding="async" src="images/smoothie.jpg" alt="food" width="160" height="160">
                         </picture>
                         <div class="cs-info">
                         <h3 class="cs-h3">
@@ -287,9 +292,9 @@
                 </li>
                 <li id="soup" class="cs-item">
                     <picture class="cs-picture"  aria-hidden="true">
-                        <source media="(max-width: 600px)" src="images/jenn-kosar-k5VGs9qQubc-unsplash.jpg">
-                        <source media="(min-width: 601px)" src="images/jenn-kosar-k5VGs9qQubc-unsplash.jpg">
-                        <img loading="lazy" decoding="async" src="images/jenn-kosar-k5VGs9qQubc-unsplash.jpg" alt="food" width="160" height="160">
+                        <source media="(max-width: 600px)" src="images/soup.jpg">
+                        <source media="(min-width: 601px)" src="images/soup.jpg">
+                        <img loading="lazy" decoding="async" src="images/soup.jpg" alt="food" width="160" height="160">
                         </picture>
                         <div class="cs-info">
                         <h3 class="cs-h3">
@@ -376,71 +381,71 @@
     </section>
 
     <!-- ============================================ -->
-<!--                  Footer                      -->
-<!-- ============================================ -->
+    <!--                  Footer                      -->
+    <!-- ============================================ -->
 
-<footer id="footer-1147">
-    <div class="cs-container">
-        <div class="cs-top">
-            <a aria-label="go back to home" class="cs-logo" href="">
-                <img class="cs-logo-img" loading="lazy" decoding="async" src="https://img1.wsimg.com/isteam/ip/b583e0ec-e75f-4fca-8018-9cf3869ea85a/granger%20logo%20green.png/:/rs=w:608,h:125,cg:true,m/cr=w:608,h:125/qt=q:100/ll" alt="logo" width="168" height="48">
-            </a>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <a href="" class="cs-link">Home</a>
-                </li>
-                <li class="cs-li">
-                    <a href="" class="cs-link">About</a>
-                </li>
-                <li class="cs-li">
-                    <a href="" class="cs-link">Blog</a>
-                <li class="cs-li">
-                    <a href="" class="cs-link">Contact</a>
-                </li>
-            </ul>
+    <footer id="footer-1147">
+        <div class="cs-container">
+            <div class="cs-top">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" loading="lazy" decoding="async" src="https://img1.wsimg.com/isteam/ip/b583e0ec-e75f-4fca-8018-9cf3869ea85a/granger%20logo%20green.png/:/rs=w:608,h:125,cg:true,m/cr=w:608,h:125/qt=q:100/ll" alt="logo" width="168" height="48">
+                </a>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">About</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Blog</a>
+                    <li class="cs-li">
+                        <a href="" class="cs-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <!--Social-->
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-transparent2.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+                <span class="cs-copyright">
+                    © Copyright 2023 - <a href="" class="cs-copyright-link">Granger Cafe</a>
+                </span>
+            </div>
         </div>
-        <div class="cs-bottom">
-            <!--Social-->
-            <ul class="cs-social">
-                <li class="cs-social-li">
-                    <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-white.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-transparent.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-transparent2.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-            </ul>
-            <span class="cs-copyright">
-                © Copyright 2023 - <a href="" class="cs-copyright-link">Stitch Non-profit Charity</a>
-            </span>
-        </div>
-    </div>
-    <!--Background-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" src="images/rod-long-I79Pgmhmy5M-unsplash.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" src="images/rod-long-I79Pgmhmy5M-unsplash.jpg">
-        <img loading="lazy" decoding="async" src="images/rod-long-I79Pgmhmy5M-unsplash.jpg" alt="cafe" width="1280" height="568">
-    </picture>
-</footer>
+        <!--Background-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" src="images/pastry.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" src="images/pastry.jpg">
+            <img loading="lazy" decoding="async" src="images/pastry.jpg" alt="cafe" width="1280" height="568">
+        </picture>
+    </footer>
                                 
                                 
                                 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
